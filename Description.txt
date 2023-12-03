@@ -30,7 +30,7 @@ How to Play:
 How to Run:
 1) Clone the repository:
 
-git clone https://github.com/Redoxftw/bubble-game.git
+git clone https://github.com/Redoxftw/Bubble-Game.git
 
 2) Open index.html in your favorite web browser.
 
