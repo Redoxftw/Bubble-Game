@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', 'Poppins', 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --panel-color: rgb(222, 216, 216);
+    --body-color: rgb(125, 195, 125);
+    --panel-top-color: rgb(65, 167, 65);
+    --panel-bottom-color: rgb(31, 30, 30);
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel {
+    height: 80%;
+    width: 90%;
+    background-color: var(--panel-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#panel-top {
+    width: 100%;
+    height: 100px;
+    background-color: var(--panel-top-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.elem {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    color: white;
+}
+
+.box {
+    border-radius: 10px;
+    width: 20%;
+    height: 80%;
+    background-color: var(--panel-color);
+    padding: 5px 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+}
+
+#panel-bottom {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: var(--panel-bottom-color);
+    /* overflow:scroll;
+    scroll-behavior: smooth; */
+}
+
+.bubble {
+    color: var(--panel-color);
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: green;
+}
+
+.bubble:hover{
+    background-color: rgb(3, 83, 3);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 600px){
+    #panel-top{
+        gap: 40px;
+    }
+
+    .box{
+        padding: 5px 10px;
+    }
+}
